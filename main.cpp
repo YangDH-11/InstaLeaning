@@ -2,15 +2,18 @@
 
 using namespace std;
 
-void fun(void){
-  cout << "run fun" << endl;
+int add(int a, int b){
+  cout << "run add fun" << endl;
+  return a + b;
 }
 
 int main(int argc, char *argv[]) {
   
   cout << "Hello Word!" << endl;
   cout << "Hello Insta360!" << endl;
-  fun();
-  
+  int num1 = 1, num2 = 1;
+  int res = add(num1, num2);
+  cout << res << endl;
+
   return 0;
 }
